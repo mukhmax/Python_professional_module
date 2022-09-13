@@ -1,6 +1,7 @@
 from fake_headers import Headers
 from requests import get
 from bs4 import BeautifulSoup
+from main import logger
 
 KEYWORDS = ['дизайн', 'фото', 'web', 'python', 'максимум']
 base_URL = 'http://habr.com'
@@ -26,5 +27,5 @@ def articles_search(word_list):
 
 
 if __name__ == "__main__":
-    articles_search = logger(articles_search)
+    articles_search = logger(articles_search, log_path='/home/mukhmax/Documents/Netology/')
     articles_search(KEYWORDS)
