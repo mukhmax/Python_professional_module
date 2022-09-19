@@ -11,3 +11,5 @@
 /Task5_Decorators/log.txt
 /Task7_Interview/__pycache__/
 /Task7_Interview/.idea/
+/Task7_Interview/tests/__pycache__/
+/Task7_Interview/tests/.pytest_cache/
