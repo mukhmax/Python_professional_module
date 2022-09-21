@@ -9,6 +9,7 @@ URL = base_URL + '/ru/all/'
 headers = Headers(os="win", headers=True).generate()
 
 
+@logger(log_path='/home/mukhmax/Documents/Netology/')
 def articles_search(word_list):
     request = get(URL, headers=headers).text
     soup = BeautifulSoup(request, 'html.parser')
@@ -27,5 +28,4 @@ def articles_search(word_list):
 
 
 if __name__ == "__main__":
-    articles_search = logger(articles_search, log_path='/home/mukhmax/Documents/Netology/')
     articles_search(KEYWORDS)
